@@ -1,0 +1,13 @@
+{
+    "add-lines": [
+        {
+            "file": "%CONFIG_DIR%/packages/ai.yaml",
+            "content": "\n        perplexity:\n            api_key: '%env(PERPLEXITY_API_KEY)%'",
+            "position": "after_target",
+            "target": "ai:\n    platform:"
+        }
+    ],
+    "env": {
+        "PERPLEXITY_API_KEY": ""
+    }
+}

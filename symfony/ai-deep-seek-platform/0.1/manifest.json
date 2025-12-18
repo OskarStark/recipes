@@ -1,0 +1,13 @@
+{
+    "add-lines": [
+        {
+            "file": "%CONFIG_DIR%/packages/ai.yaml",
+            "content": "\n        deepseek:\n            api_key: '%env(DEEPSEEK_API_KEY)%'",
+            "position": "after_target",
+            "target": "ai:\n    platform:"
+        }
+    ],
+    "env": {
+        "DEEPSEEK_API_KEY": ""
+    }
+}

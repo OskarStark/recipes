@@ -1,0 +1,13 @@
+{
+    "add-lines": [
+        {
+            "file": "%CONFIG_DIR%/packages/ai.yaml",
+            "content": "\n        aimlapi:\n            api_key: '%env(AIMLAPI_API_KEY)%'",
+            "position": "after_target",
+            "target": "ai:\n    platform:"
+        }
+    ],
+    "env": {
+        "AIMLAPI_API_KEY": ""
+    }
+}

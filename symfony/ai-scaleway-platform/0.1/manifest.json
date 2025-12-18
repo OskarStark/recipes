@@ -1,0 +1,13 @@
+{
+    "add-lines": [
+        {
+            "file": "%CONFIG_DIR%/packages/ai.yaml",
+            "content": "\n        scaleway:\n            api_key: '%env(SCALEWAY_API_KEY)%'",
+            "position": "after_target",
+            "target": "ai:\n    platform:"
+        }
+    ],
+    "env": {
+        "SCALEWAY_API_KEY": ""
+    }
+}

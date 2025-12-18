@@ -1,0 +1,13 @@
+{
+    "add-lines": [
+        {
+            "file": "%CONFIG_DIR%/packages/ai.yaml",
+            "content": "\n        voyage:\n            api_key: '%env(VOYAGE_API_KEY)%'",
+            "position": "after_target",
+            "target": "ai:\n    platform:"
+        }
+    ],
+    "env": {
+        "VOYAGE_API_KEY": ""
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "add-lines": [
+        {
+            "file": "%CONFIG_DIR%/packages/ai.yaml",
+            "content": "\n        cartesia:\n            api_key: '%env(CARTESIA_API_KEY)%'\n            version: '%env(CARTESIA_VERSION)%'",
+            "position": "after_target",
+            "target": "ai:\n    platform:"
+        }
+    ],
+    "env": {
+        "CARTESIA_API_KEY": "",
+        "#1": "CARTESIA_VERSION=2024-06-10"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "add-lines": [
+        {
+            "file": "%CONFIG_DIR%/packages/ai.yaml",
+            "content": "\n        vertexai:\n            project_id: '%env(VERTEX_AI_PROJECT_ID)%'\n            location: '%env(VERTEX_AI_LOCATION)%'",
+            "position": "after_target",
+            "target": "ai:\n    platform:"
+        }
+    ],
+    "env": {
+        "#1": "VERTEX_AI_PROJECT_ID=your-project-id",
+        "#2": "VERTEX_AI_LOCATION=us-central1"
+    }
+}

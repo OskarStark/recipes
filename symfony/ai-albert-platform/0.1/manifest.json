@@ -1,0 +1,14 @@
+{
+    "add-lines": [
+        {
+            "file": "%CONFIG_DIR%/packages/ai.yaml",
+            "content": "\n        albert:\n            api_key: '%env(ALBERT_API_KEY)%'\n            base_url: '%env(ALBERT_BASE_URL)%'",
+            "position": "after_target",
+            "target": "ai:\n    platform:"
+        }
+    ],
+    "env": {
+        "ALBERT_API_KEY": "",
+        "#1": "ALBERT_BASE_URL=https://api.albert.ai/v1"
+    }
+}

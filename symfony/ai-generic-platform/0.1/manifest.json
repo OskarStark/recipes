@@ -1,0 +1,13 @@
+{
+    "add-lines": [
+        {
+            "file": "%CONFIG_DIR%/packages/ai.yaml",
+            "content": "\n        generic:\n            base_url: '%env(GENERIC_BASE_URL)%'",
+            "position": "after_target",
+            "target": "ai:\n    platform:"
+        }
+    ],
+    "env": {
+        "#1": "GENERIC_BASE_URL=https://api.example.com/v1"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "add-lines": [
+        {
+            "file": "%CONFIG_DIR%/packages/ai.yaml",
+            "content": "\n        azure:\n            api_key: '%env(AZURE_API_KEY)%'\n            base_url: '%env(AZURE_BASE_URL)%'\n            deployment: '%env(AZURE_DEPLOYMENT)%'",
+            "position": "after_target",
+            "target": "ai:\n    platform:"
+        }
+    ],
+    "env": {
+        "AZURE_API_KEY": "",
+        "#1": "AZURE_BASE_URL=https://YOUR_RESOURCE_NAME.openai.azure.com",
+        "#2": "AZURE_DEPLOYMENT=YOUR_DEPLOYMENT_NAME"
+    }
+}

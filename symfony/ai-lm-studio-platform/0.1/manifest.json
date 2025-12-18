@@ -1,0 +1,10 @@
+{
+    "add-lines": [
+        {
+            "file": "%CONFIG_DIR%/packages/ai.yaml",
+            "content": "\n        lmstudio: ~",
+            "position": "after_target",
+            "target": "ai:\n    platform:"
+        }
+    ]
+}
